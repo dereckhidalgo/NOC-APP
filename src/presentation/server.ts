@@ -4,7 +4,6 @@ import { SendEmailLogs } from "../domain/uses-cases/email/send-email-logs";
 import { FileSystemDataSource } from "../infrastructure/datasources/file-system.datasource";
 import { LogRepositoryImp } from "../infrastructure/repositories/log.repository";
 import { CronService } from "../presentation/cron/cron-service";
-//import { EmailService } from "./email/email.service";
 
 const SystemLogRepository = new LogRepositoryImp(new FileSystemDataSource);
 
@@ -15,7 +14,7 @@ export class server {
         console.log('Server started');
 
 
-        new SendEmailLogs(SystemLogRepository).execute(['hidalgodereck27@gmail.com'])
+        //new SendEmailLogs(SystemLogRepository).execute(['hidalgodereck27@gmail.com'])
 
         // CronService.createJob(
         //     '*/4 * * * * *',
