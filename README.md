@@ -8,9 +8,9 @@ El objetivo es crear una serie de tareas usando arquitectura limpia con Typescri
 2. Configurar las varibables de entorno
 ```
 
-
 PORT = 3000
 
+MAILER_SERVICE = gmail
 MAILER_EMAIL = 
 MAILER_SECRET_KEY = 
 
